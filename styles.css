@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: #203748;
+  background: #f5f7f8;
+  font-family: Arial, sans-serif;
+}
+
+.page-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header, .site-footer { width: min(100% - 40px, 1000px); margin: auto; display: flex; justify-content: space-between; align-items: center; }
+.site-header { min-height: 64px; border-bottom: 1px solid #dce4e9; }
+.site-name { color: #173b59; font-weight: bold; text-decoration: none; }
+.header-note, .site-footer, .source-note { color: #71818a; font-size: 13px; }
+
+main { width: min(100% - 40px, 820px); margin: auto; padding: 40px 0; flex: 1; }
+.intro { margin-bottom: 20px; }
+.eyebrow, .label { color: #55768c; font-size: 11px; font-weight: bold; letter-spacing: 1px; }
+h1 { margin: 8px 0; color: #173b59; font-size: clamp(28px, 5vw, 38px); }
+.intro-copy { margin: 0; color: #71818a; }
+.weather-card { display: grid; grid-template-columns: 1fr; overflow: hidden; border: 1px solid #dce4e9; border-radius: 10px; background: white; }
+
+.scene { aspect-ratio: 8 / 5; position: relative; display: grid; place-items: center; padding: 20px; background: #e9e5dc; }
+.weather-picture { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.scene-caption { position: absolute; right: 10px; bottom: 5px; margin: 0; color: #5c6c72; font-size: 11px; }
+
+.weather-info { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+.weather-topline, .weather-bottomline { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.label { margin: 0 0 8px; } .condition { margin: 0; font-size: 19px; }
+.temperature { margin: 20px 0 5px; color: #173b59; font-size: 60px; } .temperature span { font-size: 22px; }
+.outfit-note, .location { margin: 4px 0; color: #71818a; }
+.weather-rule { margin: 18px 0 12px; border-top: 1px solid #e2e9ed; }
+.updated { color: #71818a; font-size: 11px; }
+.refresh-button { padding: 8px 10px; border: 1px solid #cbd9e2; border-radius: 6px; color: #244961; background: white; cursor: pointer; }
+.refresh-button:disabled { opacity: .6; } .error-message { color: #9e3d32; font-size: 13px; }
+.source-note { text-align: right; font-size: 11px; } .site-footer { min-height: 58px; border-top: 1px solid #dce4e9; }
+
+@media (max-width: 560px) {
+  .site-header, .site-footer, main { width: calc(100% - 32px); }
+  main { padding: 30px 0; }
+  .weather-info { padding: 24px; }
+}

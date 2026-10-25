@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#90aab8"/>
+      <stop offset="1" stop-color="#e7f0f2"/>
+    </linearGradient>
+    <clipPath id="view"><rect x="91" y="60" width="618" height="318"/></clipPath>
+  </defs>
+  <rect width="800" height="500" fill="#eeeae2"/>
+  <rect x="74" y="43" width="652" height="352" rx="4" fill="#806a56"/>
+  <g clip-path="url(#view)">
+    <rect x="91" y="60" width="618" height="318" fill="url(#sky)"/>
+    <path d="M158 175c0-22 18-39 40-39 7-26 31-44 59-44 32 0 58 24 61 55 22 2 39 21 39 44H158Z" fill="#d3dfe2"/>
+    <path d="M70 315 215 205l106 87 135-125 128 116 102-75 126 98v90H70Z" fill="#a9bec2"/>
+    <path d="M155 330h86v48h-86zm96-38h95v86h-95zm105-17h82v103h-82zm93 29h94v74h-94zm105-22h87v96h-87zm98 18h75v78h-75z" fill="#647f8d"/>
+    <path d="M165 343h9v10h-9zm21 0h9v10h-9zm21 0h9v10h-9zm-21 19h9v10h-9zm74-28h9v10h-9zm22 0h9v10h-9zm22 0h9v10h-9zm-44 20h9v10h-9zm80-45h9v10h-9zm21 0h9v10h-9zm-21 21h9v10h-9zm115 0h9v10h-9zm22 0h9v10h-9zm-22 20h9v10h-9zm109-29h9v10h-9zm22 0h9v10h-9zm-22 21h9v10h-9z" fill="#d9c894" opacity=".3"/>
+    <path d="m215 205 106 87 135-125 128 116 102-75 80 62" fill="none" stroke="#f3f7f5" stroke-width="9" stroke-linecap="round"/>
+    <g fill="#fff" opacity=".95">
+      <circle cx="180" cy="102" r="5"/><circle cx="273" cy="145" r="4"/>
+      <circle cx="366" cy="92" r="5"/><circle cx="456" cy="137" r="4"/>
+      <circle cx="548" cy="94" r="5"/><circle cx="642" cy="151" r="4"/>
+      <circle cx="230" cy="235" r="4"/><circle cx="405" cy="208" r="5"/>
+      <circle cx="590" cy="242" r="5"/><circle cx="685" cy="210" r="4"/>
+      <animateTransform attributeName="transform" type="translate" values="0 -35;10 45" dur="2.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <path d="M397 52v326M83 219h634" stroke="#806a56" stroke-width="10"/>
+  <rect x="61" y="391" width="678" height="17" rx="3" fill="#ad9175"/>
+</svg>

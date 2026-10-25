@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#91a6b1"/>
+      <stop offset="1" stop-color="#d6e0e2"/>
+    </linearGradient>
+    <clipPath id="view"><rect x="91" y="60" width="618" height="318"/></clipPath>
+  </defs>
+  <rect width="800" height="500" fill="#eeeae2"/>
+  <rect x="74" y="43" width="652" height="352" rx="4" fill="#806a56"/>
+  <g clip-path="url(#view)">
+    <rect x="91" y="60" width="618" height="318" fill="url(#sky)"/>
+    <g>
+      <path d="M172 168c0-22 18-39 40-39 7-26 31-44 59-44 32 0 58 24 61 55 22 2 39 21 39 44H172Z" fill="#edf2f2"/>
+      <path d="M420 190c0-19 15-34 34-34 7-23 28-39 53-39 28 0 51 21 54 48 20 2 35 19 35 39H420Z" fill="#e7edef" opacity=".9"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;55 0;0 0" dur="7s" repeatCount="indefinite"/>
+    </g>
+    <path d="M70 315 215 205l106 87 135-125 128 116 102-75 126 98v90H70Z" fill="#9cafaa"/>
+    <path d="M155 330h86v48h-86zm96-38h95v86h-95zm105-17h82v103h-82zm93 29h94v74h-94zm105-22h87v96h-87zm98 18h75v78h-75z" fill="#607b89"/>
+    <path d="M165 343h9v10h-9zm21 0h9v10h-9zm21 0h9v10h-9zm-21 19h9v10h-9zm74-28h9v10h-9zm22 0h9v10h-9zm22 0h9v10h-9zm-44 20h9v10h-9zm80-45h9v10h-9zm21 0h9v10h-9zm-21 21h9v10h-9zm115 0h9v10h-9zm22 0h9v10h-9zm-22 20h9v10h-9zm109-29h9v10h-9zm22 0h9v10h-9zm-22 21h9v10h-9z" fill="#f3d999" opacity=".55"/>
+  </g>
+  <path d="M397 52v326M83 219h634" stroke="#806a56" stroke-width="10"/>
+  <rect x="61" y="391" width="678" height="17" rx="3" fill="#ad9175"/>
+</svg>

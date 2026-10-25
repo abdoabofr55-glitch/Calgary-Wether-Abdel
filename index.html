@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173b59" />
+    <title>Is It a Jacket Day? | Calgary Weather</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="site-name" href="index.html" aria-label="Calgary Weather Window home">
+          <span>Calgary Weather Window</span>
+        </a>
+        <span class="header-note">A quick look outside</span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">CALGARY, ALBERTA</p>
+          <h1 id="page-title">Is it a jacket day?</h1>
+          <p class="intro-copy">One quick look at Calgary before heading out.</p>
+        </section>
+
+        <section class="weather-card" aria-label="Current Calgary weather">
+          <div class="scene" id="weather-scene">
+            <img class="weather-picture" id="weather-picture" src="images/sunny.svg" alt="Sunny Calgary seen through a window" />
+            <p class="scene-caption" id="scene-caption">Looking outside...</p>
+          </div>
+
+          <div class="weather-info">
+            <div class="weather-topline">
+              <div>
+                <p class="label">CURRENT WEATHER</p>
+                <p class="condition" id="condition">Loading...</p>
+              </div>
+              <span class="weather-dot" aria-hidden="true"></span>
+            </div>
+
+            <p class="temperature" id="temperature">--<span>°C</span></p>
+            <p class="outfit-note" id="outfit-note">Checking if you need a layer...</p>
+            <p class="location">Calgary, AB</p>
+            <div class="weather-rule"></div>
+            <div class="weather-bottomline">
+              <p class="updated" id="updated">Getting the latest weather</p>
+              <button class="refresh-button" id="refresh-button" type="button">
+                <span aria-hidden="true">↻</span> Refresh
+              </button>
+            </div>
+            <p class="error-message" id="error-message" role="alert" hidden></p>
+          </div>
+        </section>
+
+        <p class="source-note">Weather data from Open-Meteo</p>
+      </main>
+
+      <footer class="site-footer">
+        <span>Made by Abdel</span>
+        <span>© 2026</span>
+      </footer>
+    </div>
+  </body>
+</html>
